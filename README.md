@@ -8,26 +8,26 @@ Work in progress - setup inspired by [Patrick Elmquist @ medium.com](https://med
 - Clone to computer
 
 - Add qmk as submodule:  
-        git submodule add https://github.com/qmk/qmk_firmware.git
-        git submodule update --init --recursive
+  `git submodule add https://github.com/qmk/qmk_firmware.git`  
+  `git submodule update --init --recursive`  
 
 - Create .gitignore file:  
-        obj_*
-        *.hex
-        *.elf
-        *.map
-        build/
+  `obj_*`  
+  `*.hex`  
+  `*.elf`  
+  `*.map`  
+  `build/`  
 
 - Create your file structure:  
-        planck/
-        sweep/
-        technik/
-        microdox/
-        user/
+  `planck/`  
+  `sweep/`  
+  `technik/`  
+  `microdox/`  
+  `user/`  
 
 - Creat a [Makefile](https://github.com/brianoverby/keymaps/blob/main/Makefile)  
 
 - Build your keymaps:  
-        make all (build all keymaps)
-        make keyboardname (only build keyboardname)
+  `make all` (build all keymaps)    
+  `make keyboardname` (only build keyboardname)  
 
