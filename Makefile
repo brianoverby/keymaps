@@ -2,17 +2,17 @@ KEYBOARDS = planck48 planck34 planckez48 planckez34 technik48 technik34 microdox
 USER34KEYS = brove
 USER48KEYS = brianoverby
 
-# keymap local path
-LOCALPATH_planck34 = planck
-LOCALPATH_planck48 = planck
-LOCALPATH_planckez34 = planck
-LOCALPATH_planckez48 = planck
-LOCALPATH_technik34 = technik
-LOCALPATH_technik48 = technik
-LOCALPATH_microdox = microdox
-LOCALPATH_sweep = sweep
+# keymap local path (relative to Makefile)
+LOCALPATH_planck34 = keyboards/planck
+LOCALPATH_planck48 = keyboards/planck
+LOCALPATH_planckez34 = keyboards/planck
+LOCALPATH_planckez48 = keyboards/planck
+LOCALPATH_technik34 = keyboards/technik
+LOCALPATH_technik48 = keyboards/technik
+LOCALPATH_microdox = keyboards/microdox
+LOCALPATH_sweep = keyboards/sweep
 
-# keymap qmk path
+# keymap qmk path (qmk_firmware/keyboards/*)
 QMKPATH_planck34 = planck
 QMKPATH_planck48 = planck
 QMKPATH_planckez34 = planck
@@ -22,7 +22,7 @@ QMKPATH_technik48 = boardsource/technik_o
 QMKPATH_microdox = boardsource/microdox
 QMKPATH_sweep = ferris
 
-# keyboard name
+# keyboard name (QMK)
 NAME_planck34 = planck/rev6
 NAME_planck48 = planck/rev6
 NAME_planckez34 = planck/ez
@@ -32,24 +32,20 @@ NAME_technik48 = boardsource/technik_o
 NAME_microdox = boardsource/microdox
 NAME_sweep = ferris/sweep
 
-
 # run:
-# make all (to build all keymaps)
 # make planck34
 # make technik48
 # ...
 
-#all: $(KEYBOARDS)
-
 .PHONY: $(KEYBOARDS)
-planck34: QMKUSER = brove
-planck48: QMKUSER = brianoverby
-planckez34: QMKUSER = brove
-planckez48: QMKUSER = brianoverby
-technik34: QMKUSER = brove
-technik48: QMKUSER = brianoverby
-microdox: QMKUSER = brove
-sweep: QMKUSER = brove
+planck34: QMKUSER = $(USER34KEYS)
+planck48: QMKUSER = $(USER48KEYS)
+planckez34: QMKUSER = $(USER34KEYS)
+planckez48: QMKUSER = $(USER48KEYS)
+technik34: QMKUSER = $(USER34KEYS)
+technik48: QMKUSER = $(USER48KEYS)
+microdox: QMKUSER = $(USER34KEYS)
+sweep: QMKUSER = $(USER34KEYS)
 $(KEYBOARDS):
 	# init submodule
 	git submodule update --init --recursive
