@@ -3,7 +3,7 @@
 Work in progress - setup inspired by [Patrick Elmquist @ medium.com](https://medium.com/@patrick.elmquist/separate-keymap-repo-for-qmk-136ff5a419bd)
 
 ## Quick setup steps
-- Create new repo on github
+- Create new repo on github    
   Let's call it `keymaps` for this README
 
 - Clone to computer
@@ -33,9 +33,10 @@ Work in progress - setup inspired by [Patrick Elmquist @ medium.com](https://med
         keyboards/microdox/
         users/
 
-- Creat a [Makefile](https://github.com/brianoverby/keymaps/blob/main/Makefile)
+- Creat a [Makefile](https://github.com/brianoverby/keymaps/blob/main/Makefile)    
   This `Makefile` should update the QMK submodule and create links to the correct keyboard and user files.
 
-- Build your keymaps:  
-  `make keyboardname` (build keyboardname)  
+- Build your keymap:  
+
+        make keyboardname
 
