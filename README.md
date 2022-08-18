@@ -9,8 +9,8 @@ Work in progress - setup inspired by [Patrick Elmquist @ medium.com](https://med
 
 - Add qmk as submodule:  
 
-     git submodule add https://github.com/qmk/qmk_firmware.git
-     git submodule update --init --recursive
+        git submodule add https://github.com/qmk/qmk_firmware.git
+        git submodule update --init --recursive
 
 - Create .gitignore file:  
 
