@@ -14,19 +14,19 @@ Work in progress - setup inspired by [Patrick Elmquist @ medium.com](https://med
 
 - Create .gitignore file:  
 
-     obj_*  
-     *.hex  
-     *.elf  
-     *.map   
-     build/  
+        obj_*  
+        *.hex  
+        *.elf  
+        *.map   
+        build/  
 
 - Create your file structure:  
 
-     keyboards/planck/
-     keyboards/sweep/
-     keyboards/technik/
-     keyboards/microdox/
-     users/
+        keyboards/planck/
+        keyboards/sweep/
+        keyboards/technik/
+        keyboards/microdox/
+        users/
 
 - Creat a [Makefile](https://github.com/brianoverby/keymaps/blob/main/Makefile)  
 
