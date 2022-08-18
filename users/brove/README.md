@@ -1,5 +1,5 @@
-# Callum style keymap (https://github.com/callum-oakley/qmk_firmware/tree/master/users/callum)
-This is my personal keymap based on Callum style home-row mods. It's a 34-key layout - intended for use on a ortho Planck-sized keyboard or a split keyboard (like Microdox, Corne, Ferris).
+# Callum style keymap
+This is my personal keymap based on [Callum style home-row mods](https://github.com/callum-oakley/qmk_firmware/tree/master/users/callum). It's a 34-key layout - intended for use on a ortho Planck-sized keyboard or a split keyboard (like Microdox, Corne, Ferris).
 
 ## HOWTO
 The layout used is called `brove` - so you'll need to define it for your layout/keyboard.
